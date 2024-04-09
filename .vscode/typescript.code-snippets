@@ -1,0 +1,18 @@
+{
+  "React Functional Component (TS)": {
+    "prefix": ["rsc"],
+    "body": [
+      "import React from 'react';",
+      "",
+      "export function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>",
+      "      ${2:}",
+      "    </div>",
+      "  );",
+      "}",
+      ""
+    ],
+    "description": "React Functional Component (TS)"
+  }
+}
