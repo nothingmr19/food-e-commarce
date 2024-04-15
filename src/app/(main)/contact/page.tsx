@@ -5,6 +5,7 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 export default function page() {
   return (
     <div className="container ">
@@ -59,25 +60,31 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-100 p-6  grid lg:grid-cols-2 gap-x-6">
-            <div className="grid w-full max-w-[224px] items-center gap-1.5">
+          <div className="bg-gray-100 p-6  grid lg:grid-cols-2 gap-x-6 rounded-md *:space-y-1 gap-y-3">
+            <div>
+              <Label htmlFor="firstName">First name</Label>
+              <Input type="text" id="firstName" placeholder="First name" />
+            </div>
+            <div>
+              <Label htmlFor="lastName">Last name</Label>
+              <Input type="text" id="lastName" placeholder="Last name" />
+            </div>
+            <div>
               <Label htmlFor="email">Email</Label>
-              <Input
-                type="email"
-                id="email"
-                placeholder="Email"
-                // className={cn("w-[224px]")}
+              <Input type="email" id="email" placeholder="Email" />
+            </div>
+            <div>
+              <Label htmlFor="phone">Phone</Label>
+              <Input type="tel" id="phone" placeholder="Phone" />
+            </div>
+            <div className="col-span-2">
+              <Label htmlFor="phone">Comment</Label>
+              <textarea
+                className="bg-gray-50 flex resize-none  outline-none w-full rounded-md border border-gray-300 px-4 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                rows={5}
               />
             </div>
-            <div className="grid w-full max-w-[424px] items-center gap-1.5">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                type="email"
-                id="email"
-                placeholder="Email"
-                // className={cn("w-[224px]")}
-              />
-            </div>
+            <Button>Submit</Button>
           </div>
         </div>
       </div>

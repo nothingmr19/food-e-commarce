@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Input } from "@/components/ui/input";
 
 export default function page() {
   return (
@@ -18,11 +19,10 @@ export default function page() {
                 <label htmlFor="email" className="h6 text-sm">
                   Phone or Email
                 </label>
-                <input
+                <Input
                   type="email"
                   name="login"
                   id="email"
-                  className="bg-gray-50 border border-gray-300 text-gray-800 outline-none sm:text-sm rounded-md block w-full px-4 py-3 mt-[6px]"
                   placeholder="name@company.com"
                 />
               </div>
@@ -30,12 +30,11 @@ export default function page() {
                 <label htmlFor="password" className="h6 text-sm ">
                   Password
                 </label>
-                <input
+                <Input
                   type="password"
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-800 outline-none sm:text-sm rounded-md block w-full px-4 py-3 mt-[6px]"
                 />
               </div>
               <div className="flex items-center justify-between py-3 ">
