@@ -9,6 +9,7 @@ export default function MainLayout({ children }: RootLayoutProps) {
   return (
     <Fragment>
       <Navbar />
+      {children}
     </Fragment>
   );
 }
