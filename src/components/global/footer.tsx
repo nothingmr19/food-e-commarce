@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export function FooterPage() {
+export function Footer() {
   return (
     <footer className=" border-t pt-12 md:pt-16 lg:pt-[64px] bg-[#0A0A0B]">
       <div className="container *:w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 place-content-between border-b pb-6 md:pb-10 lg:pb-[40px]">

@@ -1,6 +1,6 @@
 import { Fragment, ReactNode } from "react";
 import { Navbar } from "@/components/global";
-import { FooterPage } from "@/components/global/footer";
+import { Footer } from "@/components/global/footer";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -11,7 +11,7 @@ export default function MainLayout({ children }: RootLayoutProps) {
     <Fragment>
       <Navbar />
       {children}
-      <FooterPage />
+      <Footer />
     </Fragment>
   );
 }
