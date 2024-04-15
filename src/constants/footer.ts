@@ -23,7 +23,7 @@ export const footer = {
     links: [
       {
         label: "About us",
-        href: "/aboutus",
+        href: "/about",
       },
       {
         label: "Best sellers",
@@ -41,7 +41,7 @@ export const footer = {
     links: [
       {
         label: "Customer support",
-        href: "/aboutus",
+        href: "/customer-support",
       },
       {
         label: "FAQ",
@@ -53,7 +53,7 @@ export const footer = {
       },
       {
         label: "Shipping Returns and Refund policy",
-        href: "/returnpolicy",
+        href: "/return-policy",
       },
     ],
   },
