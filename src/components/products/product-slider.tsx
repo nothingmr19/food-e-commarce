@@ -31,7 +31,7 @@ export function ProductSlider() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-y-4">
-      <div className="relative border rounded-xl border-[#D5D5D8] p-5 pb-8 h-96 w-full">
+      <div className="relative border rounded-xl border-[#D5D5D8] p-5 pb-8 h-[520px] w-full">
         {/* eslint-disable-next-line */}
         <img
           src={images[selectedImageIndex].src}
@@ -56,7 +56,7 @@ export function ProductSlider() {
           <button
             key={index}
             onClick={() => handleClick(index)}
-            className="size-20 flex items-center justify-center p-3 border rounded-xl border-[#D5D5D8]"
+            className="size-[144px] flex items-center justify-center p-3 border rounded-xl border-[#D5D5D8]"
           >
             {/* eslint-disable-next-line */}
             <img

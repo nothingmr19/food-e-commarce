@@ -7,9 +7,9 @@ export function Navbar() {
   return (
     <nav className="border-b py-6">
       <div className="container grid grid-cols-4 jubeit">
-        <div>
+        <Link href="/">
           <Image src="/logo.svg" alt="logo" width={155} height={44} />
-        </div>
+        </Link>
         <div className="flex items-center gap-x-5 w-full col-span-2">
           <div className="flex items-center gap-x-2">
             <CiLocationOn className="w-6 h-6" />

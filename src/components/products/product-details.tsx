@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BiPlus } from "react-icons/bi";
 import { PiMinus, PiMinusThin } from "react-icons/pi";
+import { RightAcco } from "./right-acco";
 
 export function ProductDetails() {
   const [quantity, setQuantity] = useState<number>(1);
@@ -94,6 +95,9 @@ export function ProductDetails() {
             Buy now
           </button>
         </div>
+      </div>
+      <div>
+        <RightAcco />
       </div>
     </div>
   );
