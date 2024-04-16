@@ -135,13 +135,10 @@ export function ViewProductPage() {
                       </div>
                       <h5 className="h6 text-[#02C406] mt-1">Save 30%</h5>
                     </div>
-                    <Link
-                      href="/addcart"
-                      className="flex items-center border rounded-xl w-fit px-3 gap-x-2 border-[#10B404]"
-                    >
+                    <div className="flex items-center border rounded-xl w-fit px-3 gap-x-2 border-[#10B404]">
                       <Image src="/plus.png" alt="" height={16} width={16} />
                       <p className="h6 text-[#10B404] py-2 ">Add</p>
-                    </Link>
+                    </div>
                   </div>
                 </div>
               </div>
