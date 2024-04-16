@@ -26,29 +26,23 @@ export function SideNavBar() {
       <div className="">
         <div className="space-y-2 w-full max-w-[240px]">
           <div className="overflow-hidden mb-6">
-            <summary className="flex  items-center justify-between gap-2 bg-white py-2 text-gray-900 transition">
+            <summary className="flex  items-center justify-between gap-2 bg-white pt-12 text-gray-900 transition">
               <span className="h5 text-gray-800"> Price </span>
             </summary>
 
-            <div className="border-t border-gray-200 bg-white">
-              <header className="flex items-center justify-between py-3">
-                <span className="text-sm text-gray-700">
-                  The highest price is 2550 Tk
-                </span>
-              </header>
-
-              <div className="border-t border-gray-200 py-4">
-                <div className="flex justify-between gap-4">
+            <div className=" border-gray-200 bg-white">
+              <div className=" border-gray-200 pt-4">
+                <div className="flex justify-between gap-4 border-b pb-8">
                   <label
                     htmlFor="FilterPriceFrom"
                     className="flex items-center gap-2"
                   >
-                    <span className="text-sm text-gray-600">Tk</span>
+                    <span className="text-sm text-gray-600">From</span>
 
                     <input
                       type="number"
                       id="FilterPriceFrom"
-                      placeholder="From"
+                      placeholder="0"
                       className="w-full rounded-md border border-gray-300 shadow-sm sm:text-sm py-[6px] px-[10px]"
                     />
                   </label>
@@ -57,12 +51,12 @@ export function SideNavBar() {
                     htmlFor="FilterPriceTo"
                     className="flex items-center gap-2"
                   >
-                    <span className="text-sm text-gray-600">Tk</span>
+                    <span className="text-sm text-gray-600">To</span>
 
                     <input
                       type="number"
                       id="FilterPriceFrom"
-                      placeholder="To"
+                      placeholder="0"
                       className="w-full rounded-md border border-gray-300 shadow-sm sm:text-sm py-[6px] px-[10px] input-bo"
                     />
                   </label>
@@ -71,11 +65,11 @@ export function SideNavBar() {
             </div>
           </div>
           <div className="overflow-hidden">
-            <summary className="flex items-center justify-between gap-2 bg-white pb-2 text-gray-900 transition">
+            <summary className="flex items-center justify-between gap-x-2 bg-white text-gray-900 transition">
               <span className="h5 text-gray-800"> Availability </span>
             </summary>
 
-            <div className="border-t border-gray-200 bg-white">
+            <div className="bg-white">
               <ul className="space-y-1  py-4">
                 <li>
                   <label

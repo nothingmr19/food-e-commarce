@@ -78,7 +78,7 @@ export function ViewProductPage() {
           </div>
         </div>
       </div> */}
-      <div className="grid lg:grid-cols-5 gap-y-5 mt-6 mb-10">
+      <div className="grid lg:grid-cols-4 gap-y-5 mt-6 mb-10">
         {allProducts.map((item, index) => {
           return (
             <Link
@@ -101,7 +101,7 @@ export function ViewProductPage() {
               <div className="flex flex-col justify-between p-6">
                 <div className="py-8">
                   <div className="flex items-center justify-between">
-                    <p className="h6 text-[#E38407] bg-[#FFFBF5] px-2 py-1 rounded-full">
+                    <p className="h6 bg-[#ECFDF5] px-2 py-1 rounded-full text-[#10B404]">
                       In Stock
                     </p>
                     <div className="flex items-center gap-x-1">
@@ -120,22 +120,28 @@ export function ViewProductPage() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="h5 pb-2 pt-[14px]">{item.name}</h3>
-                  <div className="flex items-center gap-x-4">
-                    <h5 className="price">499 Tk</h5>
-                    <h5 className="price font-normal text-base text-gray-400 line-through">
-                      599 Tk
-                    </h5>
-                  </div>
+                  <h3 className="h5 pb-2 pt-[14px] text-gray-800">
+                    {item.name}
+                  </h3>
                 </div>
                 <div className="absolute bottom-0 left-6 right-6 ">
                   <div className="flex justify-between items-center">
-                    <h6 className="quantity">250 ml</h6>
-
-                    <div className="flex items-center border border-[#E38407] rounded-full w-fit px-3 py-[2px] gap-x-2">
-                      <Image src="/plus.png" alt="" height={16} width={16} />
-                      <p className="h6 text-[#E38407]">Add</p>
+                    <div>
+                      <div className="flex items-center gap-x-2">
+                        <h5 className="price text-gray-800">499 Tk</h5>
+                        <h5 className="price font-normal text-base text-gray-400 line-through">
+                          599 Tk
+                        </h5>
+                      </div>
+                      <h5 className="h6 text-[#02C406] mt-1">Save 30%</h5>
                     </div>
+                    <Link
+                      href="/addcart"
+                      className="flex items-center border rounded-xl w-fit px-3 gap-x-2 border-[#10B404]"
+                    >
+                      <Image src="/plus.png" alt="" height={16} width={16} />
+                      <p className="h6 text-[#10B404] py-2 ">Add</p>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -50,7 +50,7 @@ export function DescriptionReviewPage() {
                 classNames(
                   "w-full py-6 ",
                   selected
-                    ? "text-gray-800 font-semibold text-2xl leading-8 border-b border-yellow-400"
+                    ? "text-gray-800 font-semibold text-2xl leading-8 border-b-2 border-yellow-500"
                     : "text-gray-600 font-semibold text-2xl leading-8"
                 )
               }
