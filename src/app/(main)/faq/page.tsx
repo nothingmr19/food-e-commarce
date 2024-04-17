@@ -6,9 +6,9 @@ export default function page() {
     <div className="container">
       <div className="flex items-center justify-center h-[204px] bg-gray-50 border-b">
         <nav aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1 text-sm text-gray-600">
+          <ol className="flex items-center gap-1 text-sm ">
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-500 font-normal">
                 {" "}
                 Home
               </a>
@@ -19,13 +19,13 @@ export default function page() {
             </li>
 
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-900 font-normal">
                 {" "}
                 FAQ’s
               </a>
             </li>
           </ol>
-          <h3 className="h4 text-center mt-2">FAQ’s</h3>
+          <h3 className="h4 text-center mt-2 text-gray-900">FAQ’s</h3>
         </nav>
       </div>
       <div className="relative w-full py-[96px]">

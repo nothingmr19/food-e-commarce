@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
@@ -6,9 +7,9 @@ export default function page() {
     <div className="container">
       <div className="flex items-center justify-center h-[204px] bg-gray-50 border-b">
         <nav aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1 text-sm text-gray-600">
+          <ol className="flex items-center gap-1 text-sm ">
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-500 font-normal ">
                 {" "}
                 Home
               </a>
@@ -19,22 +20,22 @@ export default function page() {
             </li>
 
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-900 font-normal">
                 {" "}
                 Track Order
               </a>
             </li>
           </ol>
-          <h3 className="h4 text-center mt-2">Track Order</h3>
+          <h3 className="h4 text-center mt-2 text-gray-900">Track Order</h3>
         </nav>
       </div>
 
       <div className="grid grid-cols-5 py-8">
-        <div className="col-span-2">
-          <h6 className="text-2xl font-semibold text-gray-700 mb-8">
+        <div className="col-span-2 w-full max-w-[448px]">
+          <h6 className="text-2xl font-semibold text-gray-700 pb-4 border-b ">
             Tracking activity{" "}
           </h6>
-          <ol className=" overflow-hidden space-y-8">
+          <ol className=" overflow-hidden space-y-8 mt-4">
             <li className="relative flex-1 after:content-['']  after:w-0.5 after:h-full  after:bg-green-600 after:inline-block after:absolute after:-bottom-10 after:left-4 lg:after:left-5">
               <a className="flex items-start font-medium w-full  ">
                 <span className="w-8 h-8 bg-green-600 border-2 border-transparent rounded-full flex justify-center items-center mr-3 text-sm text-white lg:w-10 lg:h-10">
@@ -244,24 +245,30 @@ export default function page() {
                 Shipping
               </span>
             </div>
-            <div className="mt-4 text-lg max-w-xs">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Order date:</span>
-                <span className="text-gray-800 font-medium">
+            <div className="mt-4 max-w-sm">
+              <div className="flex items-center justify-between mt-5">
+                <span className="text-gray-600 text-xl font-normal">
+                  Order date:
+                </span>
+                <span className="text-gray-800 text-xl font-medium">
                   3:45pm, 19 Mar 2024
                 </span>
               </div>
 
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Delivery date:</span>
-                <span className="text-gray-800 font-medium">
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-gray-600 text-xl font-normal">
+                  Delivery date:
+                </span>
+                <span className="text-gray-800 font-medium text-xl">
                   3:45pm, 19 Mar 2024
                 </span>
               </div>
 
-              <div className="flex items-center justify-between">
-                <span className="text-gray-600">Address:</span>
-                <span className="text-gray-800 font-medium">
+              <div className="flex items-center justify-between mt-4">
+                <span className="text-gray-600 text-xl font-normal">
+                  Address:
+                </span>
+                <span className="text-gray-800 font-medium text-xl">
                   Rangpur sadar, Rangpur
                 </span>
               </div>
@@ -295,6 +302,16 @@ export default function page() {
                 </div>
               </div>
             </div>
+            <div className="flex items-center gap-x-2 justify-end cursor-pointer">
+              <h6 className="h6 font-normal text-gray-500">Return/Refund</h6>
+              <Image
+                src="/return.png"
+                alt=""
+                height={24}
+                width={24}
+                className="cursor-pointer"
+              />
+            </div>
           </div>
 
           <div className="mt-8">
@@ -303,17 +320,17 @@ export default function page() {
             </h2>
             <hr className="pb-3" />
             <div className="space-y-2 text-gray-700">
-              <div className="flex justify-between">
+              <div className="flex justify-between py-3 h6 text-gray-700">
                 <span>Subtotal</span>
-                <span>$998.00</span>
+                <span className="text-gray-700">$998.00</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pb-3 h6 text-gray-700">
                 <span>Promo code discount</span>
-                <span>-$100.00</span>
+                <span className="text-gray-700">-$100.00</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pb-3 h6 text-gray-700">
                 <span>Shipping fee</span>
-                <span>$70.00</span>
+                <span className="text-gray-700">$70.00</span>
               </div>
               <div className="border-t pt-4 flex justify-between font-bold">
                 <span className="text-gray-700">Total</span>

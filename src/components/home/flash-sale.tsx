@@ -22,7 +22,8 @@ export function FlashSalePage() {
       <div className="grid lg:grid-cols-5 gap-y-5 mt-6">
         {flashProducts.map((item, index) => {
           return (
-            <div
+            <Link
+              href={`/p/${item.name.toLowerCase().replace(/ /g, "-")}`}
               key={index}
               className={`w-full h-full max-w-[264px] relative border-r ${
                 index === 4 || index === 9 || index === 14 ? "border-none" : ""
@@ -85,7 +86,7 @@ export function FlashSalePage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

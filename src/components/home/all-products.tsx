@@ -18,7 +18,8 @@ export function AllProductPage() {
       <div className="grid lg:grid-cols-5 gap-y-5 mt-6">
         {allProducts.map((item, index) => {
           return (
-            <div
+            <Link
+              href={`/p/${item.name.toLowerCase().replace(/ /g, "-")}`}
               key={index}
               className={`w-full h-full max-w-[264px] relative border-r ${
                 index === 4 || index === 9 || index === 14 ? "border-none" : ""
@@ -81,11 +82,11 @@ export function AllProductPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
-      <div className="flex items-center justify-center mt-5">
+      <div className="flex items-center justify-center mt-10">
         <Button>Show More</Button>
       </div>
     </div>

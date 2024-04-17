@@ -8,9 +8,9 @@ export function AddCartPage() {
     <div className="container">
       <div className="flex items-center justify-center h-[204px] bg-gray-50 border-b">
         <nav aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1 text-sm text-gray-600">
+          <ol className="flex items-center gap-1 text-sm ">
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-500 font-normol ">
                 {" "}
                 Home
               </a>
@@ -35,13 +35,15 @@ export function AddCartPage() {
             </li>
 
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 font-normal text-gray-900">
                 {" "}
                 Cart
               </a>
             </li>
           </ol>
-          <h3 className="h4 text-center">Cart</h3>
+          <h3 className="h4 text-center text-gray-900 font-semibold mt-2">
+            Cart
+          </h3>
         </nav>
       </div>
       <div className="flex gap-x-6 py-section">
@@ -238,28 +240,30 @@ export function AddCartPage() {
             </tbody>
           </table>
         </div>
-        <div className="w-full max-w-[392px] border rounded-xl p-4">
+        <div className="w-full h-full max-w-[392px] border rounded-xl ">
           <div>
-            <h3 className="text-2xl font-bold leading-8 text-gray-800 py-4 border-b">
+            <h3 className="text-2xl font-bold leading-8 text-gray-800 py-4 border-b px-4">
               Order Summary
             </h3>
-            <div className="flex items-center justify-between py-4">
+            <div className="flex items-center justify-between py-3 px-4">
               <h6 className="h6">4 Items</h6>
               <h6 className="h6">$2,000.00</h6>
             </div>
-            <div className="flex items-center justify-between py-4">
+            <div className="flex items-center justify-between py-3 px-4">
               <h6 className="h6">Discount</h6>
               <h6 className="h6">-$20.00</h6>
             </div>
-            <div className="flex items-center justify-between py-4">
+            <div className="flex items-center justify-between py-3 px-4">
               <h6 className="h6">Subtotal</h6>
               <h6 className="h6">$1,980.00</h6>
             </div>
-            <Link href="/checkout">
-              <button className="w-full py-3 bg-[#208B18] text-white text-center rounded-xl">
-                Checkout
-              </button>
-            </Link>
+            <div className="py-5 px-4">
+              <Link href="/checkout">
+                <button className="w-full py-3 bg-[#208B18] text-white text-center rounded-xl">
+                  Checkout
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

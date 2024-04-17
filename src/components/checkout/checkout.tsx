@@ -9,7 +9,7 @@ export function CheckOutPage() {
         <nav aria-label="Breadcrumb">
           <ol className="flex items-center gap-1 text-sm text-gray-600">
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-500 font-normal">
                 {" "}
                 Home
               </a>
@@ -34,13 +34,15 @@ export function CheckOutPage() {
             </li>
 
             <li>
-              <a href="#" className="h6">
+              <a href="#" className="h6 text-gray-900 font-normal">
                 {" "}
                 Checkout
               </a>
             </li>
           </ol>
-          <h3 className="h4 text-center">Checkout</h3>
+          <h3 className="h4 text-center text-gray-900 font-normol mt-2">
+            Checkout
+          </h3>
         </nav>
       </div>
       <div className="flex gap-x-6">

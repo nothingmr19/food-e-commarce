@@ -42,23 +42,25 @@ export function DescriptionReviewPage() {
   return (
     <div className="bg-gray-50">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 border-b border-gray-200 w-full max-w-md">
-          {Object.keys(categories).map((category) => (
-            <Tab
-              key={category}
-              className={({ selected }) =>
-                classNames(
-                  "w-full py-6 ",
-                  selected
-                    ? "text-gray-800 font-semibold text-2xl leading-8 border-b-2 border-yellow-500"
-                    : "text-gray-600 font-semibold text-2xl leading-8"
-                )
-              }
-            >
-              {category}
-            </Tab>
-          ))}
-        </Tab.List>
+        <div className="border-b-2 border-gray-200">
+          <Tab.List className="flex space-x-1   w-full max-w-md">
+            {Object.keys(categories).map((category) => (
+              <Tab
+                key={category}
+                className={({ selected }) =>
+                  classNames(
+                    "w-full py-6 ",
+                    selected
+                      ? "text-gray-800 font-semibold text-2xl leading-8 border-b-2 border-yellow-500"
+                      : "text-gray-600 font-semibold text-2xl leading-8"
+                  )
+                }
+              >
+                {category}
+              </Tab>
+            ))}
+          </Tab.List>
+        </div>
         <Tab.Panels className="mt-2 px-6 pb-8">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel key={idx} className={classNames("rounded-xl  p-3")}>
